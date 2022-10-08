@@ -19,12 +19,12 @@
             background-size: cover;
         }
 
-        #header {
+        header {
             text-align: center;
             padding: 5px;
         }
 
-        #header img {
+        header img {
             width: 730px;
             height: auto;
         }
@@ -111,11 +111,14 @@
 </head>
 
 <body>
-    <div id="header"><img src="canadaforest.jpg"></div>
+    <header>
+        <img src="canadaforest.jpg">
+    </header>
     <div id="container">
+    <main>
         <h3 class="heading">Websites about Protected Areas Issues</h3>
         <p>Humans are contributing to the destruction of natural ecosystems all over the world. We rely heavily on our ecosystems for things like food production and forestry.
-            One third<sup><a href="#footer">[1]</sup></a> of all land is degrading. This greatly harms our planet's biodiversity.
+            One third<sup><a href="#footer">[1]</a></sup> of all land is degrading. This greatly harms our planet's biodiversity.
             <br>A solution to the degradation of the these natural environments is establishing protected areas. Protected areas can help to conserve Earth's natural habitats and sustain all kinds of wildlife.
             By maintaining protected areas, we are also able to contribute to processes like carbon storage and flood prevention.<sup><a href="#footer">[2]</a></sup></p>
         <h4 class="heading">Links to Issues & Strategies</h4>
@@ -132,7 +135,8 @@
         <div class="images"><img src="marae_moana_reef.JPG" title="A reef in Marae Moana, the world's largest protected area."><img src="moab_utah.jpg" title="Red rocks at a national park in Moab, Utah."><img src="protected_areas_canada.jpg" title="An infographic depicting Canada's protected areas.">
         </div>
         <p id="caption">Hover for image info!</p>
-        <footer id="footer"><p>&copy; <a href="/zgawlak.github.io/index.html">Zoë Gawlak</a> | 301259131 - COMP213 - Fall 2022
+    </main>
+    <footer id="footer"><p>&copy; <a href="/zgawlak.github.io/index.html">Zoë Gawlak</a> | 301259131 - COMP213 - Fall 2022 <!-- I used an id for footer so I could link the first paragraph to it, I don't think you can link to the footer element directly -->
             <br>Image credits: <a target="_blank" href="https://www.nrcan.gc.ca/our-natural-resources/forests/sustainable-forest-management/conservation-and-protection-canadas-forests/17501">header</a>,
             <a target="_blank" href="https://www.pexels.com/photo/waterfalls-in-forest-460621/">background</a>, 
             <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Reef_outside_Aititaki%2C_Cook_Islands.JPG/568px-Reef_outside_Aititaki%2C_Cook_Islands.JPG">reef</a>, 
@@ -140,7 +144,7 @@
             <a target="_blank" href="https://canadiangeographic.ca/articles/infographic-canadas-protected-areas/">map</a>
             | Sources: <a target ="_blank" href="https://www.iucn.org/our-work/protected-areas-and-land-use">1</a>, <a target="_blank" href="https://www.theguardian.com/environment/2021/mar/08/land-could-be-worth-more-left-to-nature-than-when-farmed-study-finds-aoe">2</a>
             </p>
-        </footer>
+    </footer>
     </div>
 </body>
 </html>
