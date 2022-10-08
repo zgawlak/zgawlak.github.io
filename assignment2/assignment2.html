@@ -45,6 +45,40 @@
             color: #444444;
         }
 
+        h4:hover, h3:hover{
+            letter-spacing: 1px;
+        }
+
+        #footer {
+            background-image: linear-gradient(to bottom right, lightcyan, lightyellow);
+            padding: 5px;
+            border: 1px dashed #444444;
+            border-radius: 10px;
+            color: #444444;
+        }
+
+        .images {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            max-width: 700px;
+            gap: 16px;
+            padding: 10px;
+        }
+
+        .images img {
+            max-width: 200px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 25px;
+        }
+
+        #caption {
+            font-size: 12px;
+            font-style: italic;
+        }
+
         a {
             color: #a73737;
             text-decoration: none;
@@ -69,6 +103,10 @@
         footer {
             font-size: 10px;
         }
+
+        hr {
+            border: 1px dashed DarkOliveGreen;
+        }
     </style>
 </head>
 
@@ -76,13 +114,12 @@
     <div id="header"><img src="canadaforest.jpg"></div>
     <div id="container">
         <h3 class="heading">Websites about Protected Areas Issues</h3>
-        <p>Human activity, mostly for food production and forestry, is transforming landscapes.
-            Today, one third of all land is degraded or degrading, which harms biodiversity and jeopardises essential
-            ecosystem services such as carbon storage.
-            Protected areas offer a solution. If effectively managed and fairly governed, such areas can safeguard
-            nature and cultural resources, protect human health and well-being, provide sustainable livelihoods and so
-            support sustainable development.</p>
+        <p>Humans are contributing to the destruction of natural ecosystems all over the world. We rely heavily on our ecosystems for things like food production and forestry.
+            One third<sup><a href="#footer">[1]</sup></a> of all land is degrading. This greatly harms our planet's biodiversity.
+            <br>A solution to the degradation of the these natural environments is establishing protected areas. Protected areas can help to conserve Earth's natural habitats and sustain all kinds of wildlife.
+            By maintaining protected areas, we are also able to contribute to processes like carbon storage and flood prevention.<sup><a href="#footer">[2]</a></sup></p>
         <h4 class="heading">Links to Issues & Strategies</h4>
+        <p>The following is a list of websites that can give you more information on the topic of protected areas.</p>
         <ul>
             <li><a target="_blank"
                     href="https://www.nrcan.gc.ca/our-natural-resources/forests/sustainable-forest-management/conservation-and-protection-canadas-forests/17501">Conservation
@@ -90,16 +127,23 @@
             <li><a target="_blank"
                     href="https://www.iucn.org/resources/conservation-tool/iucn-green-list-protected-and-conserved-areas">IUCN
                     Green List</a></li>
-            <li>f</li>
-            <li>eef</li>
-            <li>ee</li>
-            <li>fdfkjd</li>
+            <li><a target="_blank" href="https://www.protectedplanet.net/en">Protected Planets</a>
+            <li><a target="_blank" href="https://www.nrcs.usda.gov/wps/portal/nrcs/detailfull/national/plantsanimals/fishwildlife/?cid=nrcseprd1297294">USDA Wildlife Conservation Strategies</a></li>
+            <li><a target="_blank" href="https://oceanconservancy.org/">Ocean Conservancy</a></li>
+            <li><a target="_blank" href="https://www.canada.ca/en/environment-climate-change/services/national-wildlife-areas/protected-conserved-areas-database.html"> Canadian Protected and Conserved Areas Database</a></li>
         </ul>
-
-        <footer class="heading">&copy; Zoë Gawlak | 301259131 - COMP213 - Fall 2022
-            <br>Image credits: <a
-                href="https://www.nrcan.gc.ca/our-natural-resources/forests/sustainable-forest-management/conservation-and-protection-canadas-forests/17501">Header</a>
-            | <a href="https://www.pexels.com/photo/waterfalls-in-forest-460621/">Background</a>
+        <hr>
+        <div class="images"><img src="marae_moana_reef.jpg" title="A reef in Marae Moana, the world's largest protected area."><img src="moab_utah.jpg" title="Red rocks at a national park in Moab, Utah."><img src="protected_areas_canada.jpg" title="An infographic depicting Canada's protected areas.">
+        </div>
+        <p id="caption">Hover for image info!</p>
+        <footer id="footer"><p>&copy; <a href="index.html">Zoë Gawlak</a> | 301259131 - COMP213 - Fall 2022
+            <br>Image credits: <a href="https://www.nrcan.gc.ca/our-natural-resources/forests/sustainable-forest-management/conservation-and-protection-canadas-forests/17501">header</a>,
+            <a href="https://www.pexels.com/photo/waterfalls-in-forest-460621/">background</a>, 
+            <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Reef_outside_Aititaki%2C_Cook_Islands.JPG/568px-Reef_outside_Aititaki%2C_Cook_Islands.JPG">reef</a>, 
+            <a href="https://www.pexels.com/photo/red-rocks-62600/">rocks</a>, <a href="https://canadiangeographic.ca/articles/infographic-canadas-protected-areas/">map</a>
+            | Sources: <a target ="_blank" href="https://www.iucn.org/our-work/protected-areas-and-land-use">1</a>, <a target="_blank" href="https://www.theguardian.com/environment/2021/mar/08/land-could-be-worth-more-left-to-nature-than-when-farmed-study-finds-aoe">2</a>
+            </p>
         </footer>
     </div>
 </body>
+</html>
