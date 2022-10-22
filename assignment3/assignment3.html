@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <!-- Student Name: Zoë Gawlak
@@ -12,125 +12,134 @@
 </head>
 
 <body>
+
     <div id="container">
         <header>
             <a href="https://nintendo.com/"><img width="250px" src="nintendo-logo.png"></a>
             <h1>Nintendo Switch</h1>
         </header>
-
         <main>
             <span id="title">The Family Gaming Console</span>
             <!--used a span here instead of h2 because it wouldn't left align, probably could've added a width to h2 to fix that though-->
             <a class="alignright" href="../index.html">Home Page</a>
-            <div id="column1">
-                <figure><img style="width: 300px;" src="switch.png">
-                    <figcaption><a href="details.html">View Larger Picture</a></figcaption>
-                </figure>
-            </div>
-            <div id="column2">
-                <p>Nintendo's latest console builds upon its predecessor, creating a seamless transition from TV to
-                    handheld play!
-                    <br>Using the included dock and revolutionary detachable Joy-Cons, you can easily switch back and
-                    forth from a solo experience to a group one with family and friends.
-                    No TV? Flip the back stand up to play in Tabletop mode!
-                    <br>The Nintendo Switch also comes in a budget-friendly handheld-only version, the Nintendo Switch
-                    Lite, with its own set of vibrant colours.
-                    <br>Looking for more? The Nintendo Switch OLED model features a 7-inch OLED screen, a built in LAN
-                    port, and more storage!
-                </p>
-                <div id="list">
-                    <h3>The Nintendo Switch supports:</h3>
-                    <ul>
-                        <li>An expanding library of games</li>
-                        <li>Up to 8 paired Joy-Con controllers</li>
-                        <li>Bluetooth audio pairing</li>
-                        <li>amiibo figures</li>
-                    </ul>
+            <!--link doesn't work here cuz the file isn't in the folder-->
+            <div id="gridcontainer">
+                <div class="item1">
+                    <figure><img style="width: 300px;" src="switch.png">
+                        <figcaption><a href="details.html">View Larger Picture</a></figcaption>
+                    </figure>
                 </div>
-            </div>
-            <div class="images">
-                <figure><img src="oled-tabletop.png">
-                    <figcaption>Tabletop mode</figcaption>
-                </figure>
-                <figure><img src="oled-docked.png">
-                    <figcaption>TV mode</figcaption>
-                </figure>
-                <figure><img src="oled-handheld.png">
-                    <figcaption>Handheld mode</figcaption>
-                </figure>
-                <figure><img src="joycons.png">
-                    <figcaption>Joy-Con variations</figcaption>
-                </figure>
-                <figure><img src="pro-controller.png">
-                    <figcaption>Pro controller</figcaption>
-                </figure>
-                <figure><img src="carrying-case.png">
-                    <figcaption>Carrying case</figcaption>
-                </figure>
-            </div>
-            <div class="column3">
-                <h3>Nintendo Switch Models Available Now</h3>
-                <table>
-                    <tr>
-                        <th>Model</th>
-                        <th>Features</th>
-                        <th>Storage</th>
-                        <th>Price</th>
-                    </tr>
-                    <tr>
-                        <td>Nintendo Switch</td>
-                        <td>
-                            <ul>
-                                <li>Three modes: TV, Tabletop, Handheld</li>
-                                <li>Comes with set of Joy-Con controllers</li>
-                                <li>4.5 - 9 hour battery life</li>
-                            </ul>
-                        </td>
-                        <td>32GB</td>
-                        <td>$299.99</td>
-                    </tr>
-                    <tr>
-                        <td>Nintendo Switch - OLED</td>
-                        <td>
-                            <ul>
-                                <li>Three modes: TV, Tabletop, Handheld</li>
-                                <li>Comes with set of Joy-Con controllers</li>
-                                <li>4.5 - 9 hour battery life</li>
-                            </ul>
-                        </td>
-                        <td>64GB</td>
-                        <td>$349.99</td>
-                    </tr>
-                    <tr>
-                        <td>Nintendo Switch Lite</td>
-                        <td>
-                            <ul>
-                                <li>One mode: Handheld</li>
-                                <li>Joy-Con controllers not included</li>
-                                <li>3 - 7 hour battery life</li>
-                            </ul>
-                        </td>
-                        <td>32GB</td>
-                        <td>$199.99</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="column3">
-                <h3>Map of Distributors</h3><img src="map-of-canada.png" usemap="#mapofmap">
-                <map name="mapofmap">
-                    <!--I couldn't find any local distributors that weren't just stand-alone video game stores
-                so I just linked Canada-wide tech chains-->
-                    <area title="Saskatchewan"
-                        href="https://www.thesource.ca/en-ca/gaming/nintendo/all-nintendo-switch/c/scc-8-12-4?categoryCode=scc-8-12-4&view=grid&page=0&sort=relevance"
-                        coords="139,245 170,252 163,342 118,334 " shape="polygon">
-                    <area title="British Columbia" href="https://www.bestbuy.ca/en-ca/category/nintendo-switch/15303209"
-                        coords="27,195 96,232 79,285 95,318 95,329 53,313 48,317 41,312 31,289 21,265 22,250 "
-                        shape="polygon">
-                    <area title="Ontario"
-                        href="https://www.walmart.ca/browse/video-games/nintendo-switch/10012-6000196697407?q=nintendo%20switch"
-                        coords="229,281 248,293 260,293 276,324 282,361 301,370 310,369 299,383 288,391 267,403 274,377 258,367 228,353 220,355 196,346 198,314 "
-                        shape="polygon">
-                </map>
+                <div class="item2">
+                    <p>Nintendo's latest console builds upon its predecessor, creating a seamless transition from TV to
+                        handheld play!
+                        <br>Using the included dock and revolutionary detachable Joy-Cons, you can easily switch back
+                        and
+                        forth from a solo experience to a group one with family and friends.
+                        No TV? Flip the back stand up to play in Tabletop mode!
+                        <br>The Nintendo Switch also comes in a budget-friendly handheld-only version, the Nintendo
+                        Switch
+                        Lite, with its own set of vibrant colours.
+                        <br>Looking for more? The Nintendo Switch OLED model features a 7-inch OLED screen, a built in
+                        LAN
+                        port, and more storage!
+                    </p>
+                    <div id="list">
+                        <h3>The Nintendo Switch supports:</h3>
+                        <ul>
+                            <li>An expanding library of games</li>
+                            <li>Up to 8 paired Joy-Con controllers</li>
+                            <li>Bluetooth audio pairing</li>
+                            <li>amiibo figures</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item3">
+                    <div class="images">
+                        <figure><img src="oled-tabletop.png">
+                            <figcaption>Tabletop mode</figcaption>
+                        </figure>
+                        <figure><img src="oled-docked.png">
+                            <figcaption>TV mode</figcaption>
+                        </figure>
+                        <figure><img src="oled-handheld.png">
+                            <figcaption>Handheld mode</figcaption>
+                        </figure>
+                        <figure><img src="joycons.png">
+                            <figcaption>Joy-Con variations</figcaption>
+                        </figure>
+                        <figure><img src="pro-controller.png">
+                            <figcaption>Pro controller</figcaption>
+                        </figure>
+                        <figure><img src="carrying-case.png">
+                            <figcaption>Carrying case</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="item4">
+                    <h3>Nintendo Switch Models Available Now</h3>
+                    <table>
+                        <tr>
+                            <th>Model</th>
+                            <th>Features</th>
+                            <th>Storage</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>Nintendo Switch</td>
+                            <td>
+                                <ul>
+                                    <li>Three modes: TV, Tabletop, Handheld</li>
+                                    <li>Comes with set of Joy-Con controllers</li>
+                                    <li>4.5 - 9 hour battery life</li>
+                                </ul>
+                            </td>
+                            <td>32GB</td>
+                            <td>$299.99</td>
+                        </tr>
+                        <tr>
+                            <td>Nintendo Switch - OLED</td>
+                            <td>
+                                <ul>
+                                    <li>Three modes: TV, Tabletop, Handheld</li>
+                                    <li>Comes with set of Joy-Con controllers</li>
+                                    <li>4.5 - 9 hour battery life</li>
+                                </ul>
+                            </td>
+                            <td>64GB</td>
+                            <td>$349.99</td>
+                        </tr>
+                        <tr>
+                            <td>Nintendo Switch Lite</td>
+                            <td>
+                                <ul>
+                                    <li>One mode: Handheld</li>
+                                    <li>Joy-Con controllers not included</li>
+                                    <li>3 - 7 hour battery life</li>
+                                </ul>
+                            </td>
+                            <td>32GB</td>
+                            <td>$199.99</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="item5">
+                    <h3>Map of Distributors</h3><img src="map-of-canada.png" usemap="#mapofmap">
+                    <map name="mapofmap">
+                        <!--I couldn't find any local distributors that weren't just stand-alone video game stores
+        so I just linked Canada-wide tech chains-->
+                        <area title="Saskatchewan"
+                            href="https://www.thesource.ca/en-ca/gaming/nintendo/all-nintendo-switch/c/scc-8-12-4?categoryCode=scc-8-12-4&view=grid&page=0&sort=relevance"
+                            coords="139,245 170,252 163,342 118,334 " shape="polygon">
+                        <area title="British Columbia"
+                            href="https://www.bestbuy.ca/en-ca/category/nintendo-switch/15303209"
+                            coords="27,195 96,232 79,285 95,318 95,329 53,313 48,317 41,312 31,289 21,265 22,250 "
+                            shape="polygon">
+                        <area title="Ontario"
+                            href="https://www.walmart.ca/browse/video-games/nintendo-switch/10012-6000196697407?q=nintendo%20switch"
+                            coords="229,281 248,293 260,293 276,324 282,361 301,370 310,369 299,383 288,391 267,403 274,377 258,367 228,353 220,355 196,346 198,314 "
+                            shape="polygon">
+                    </map>
+                </div>
             </div>
         </main>
         <footer>
@@ -140,7 +149,6 @@
             </p>
         </footer>
     </div>
-
 </body>
 
 </html>
