@@ -69,10 +69,6 @@ a:hover {
     text-transform: uppercase;
 }
 
-a:visited {
-    text-decoration: line-through;
-}
-
 #title {
     text-align: left;
     font-size: 24px;
