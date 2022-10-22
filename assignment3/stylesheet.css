@@ -122,7 +122,7 @@ body {
     gap: 10px;
   }
 
-  #gridcontainer div {
+  #gridcontainer > div {
     padding: 10px;
     text-align: justify;
   }
