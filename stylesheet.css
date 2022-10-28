@@ -62,7 +62,6 @@ h1 {
     font-family: Verdana;
     letter-spacing: 1px;
     color: #80deea;
-    text-shadow: 1px 1px #FFFFFF;
     margin-top: -8px;
     text-align: center;
 }
@@ -70,7 +69,6 @@ h1 {
 h2 {
     font-family: Verdana;
     color: #b2dfdb;
-    text-shadow: 1px 1px #FFFFFF;
     margin-top: -10px;
     text-align: center;
 }
