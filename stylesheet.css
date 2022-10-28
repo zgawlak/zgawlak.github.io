@@ -1,0 +1,106 @@
+body {
+    background-color: #FFFFFF;
+    background-image: url('index/montereybayaquarium.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 16px;
+    font-family: Arial;
+    color: #ffffff;
+}
+
+#gridcontainer {
+    width: 900px;
+    padding: 25px;
+    margin: 50px auto;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+        'header header header header header header'
+        'menu main main main right right'
+        'footer footer footer footer footer footer';
+}
+
+#gridcontainer > div{
+    padding: 10px;
+}
+
+.item1 {
+    grid-area: header;
+    text-align: center;
+}
+
+.item2 {
+    grid-area: menu;
+}
+
+.item3 {
+    grid-area: main;
+}
+
+.item4 {
+    grid-area: right;
+}
+
+.item5 {
+    grid-area: footer;
+}
+
+#nav {
+    height: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e0f2f1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: #444444;
+    line-height: 150%;
+}
+
+h1 {
+    font-family: Verdana;
+    letter-spacing: 1px;
+    color: #80deea;
+    text-shadow: 1px 1px #FFFFFF;
+    margin-top: -8px;
+    text-align: center;
+}
+
+h2 {
+    font-family: Verdana;
+    color: #b2dfdb;
+    text-shadow: 1px 1px #FFFFFF;
+    margin-top: -10px;
+    text-align: center;
+}
+
+hr {
+    border: #e0f7fa 1px dashed;
+}
+
+ul {
+    list-style-image: url('index/slugjump.gif');
+}
+
+footer {
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #b2dfdb;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #00bcd4;
+}
+
+a:visited {
+    color: #444444;
+}
