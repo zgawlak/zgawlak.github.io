@@ -93,10 +93,7 @@ legend {
   border-radius: 2px;
 }
 
-#inline {
-  display: inline-block;
-}
-
+#inline,
 #year {
   display: inline-block;
 }
