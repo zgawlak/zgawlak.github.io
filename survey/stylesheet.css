@@ -86,7 +86,6 @@ legend {
   border-radius: 2px;
 }
 
-#year,
 #dropdown {
   display: inline-block;
   background-color: #f7f7f7;
@@ -94,9 +93,13 @@ legend {
   border-radius: 2px;
 }
 
+#inline {
+  display: inline-block;
+}
+
 #year {
-  width: 40px;
   margin-left: 5px;
+  display: inline-block;
 }
 
 #semester {
