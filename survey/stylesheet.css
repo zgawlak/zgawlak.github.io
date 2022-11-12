@@ -1,0 +1,147 @@
+body {
+  font: 14px "Franklin Gothic SSi Book";
+  background-color: #464648;
+}
+
+@font-face {
+  font-family: "Franklin Gothic SSi Book";
+  src: url("font/Franklin\ Gothic\ SSi\ Book.ttf");
+}
+
+header {
+  width: 550px;
+  margin: 2em auto;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+header img {
+  float: left;
+  width: 200px;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+  margin-bottom: -20px;
+}
+
+a {
+  color: #d4dd36;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+#description {
+  font-size: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 25px;
+}
+
+#info {
+  padding-bottom: 10px;
+}
+
+#survey-form {
+  width: 500px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #464648;
+}
+
+fieldset {
+  border: 1px solid #cccccc;
+  padding-bottom: 25px;
+}
+
+legend {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+#course,
+#instructor {
+  display: inline-block;
+  margin: 1em 0;
+  width: 220px;
+  background-color: #f7f7f7;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  margin-left: 5px;
+}
+
+#textarea {
+  display: block;
+  width: 100%;
+  margin: 1em 0;
+  font-size: 16px;
+  font-family: "Franklin Gothic SSi Book";
+  background-color: #f7f7f7;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+}
+
+#year,
+#dropdown {
+  display: inline-block;
+  background-color: #f7f7f7;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+}
+
+#year {
+  width: 40px;
+  margin-left: 5px;
+}
+
+#semester {
+  margin-left: 15px;
+}
+
+#semester > select {
+  background-color: #d4dd36;
+  border: 1px solid #464648;
+  border-radius: 2px;
+  margin-left: 5px;
+}
+
+#dropdown {
+  background-color: #d4dd36;
+  border: 1px solid #464648;
+  border-radius: 2px;
+  margin-left: 30px;
+}
+
+input[type="radio"] {
+  display: inline-block;
+}
+
+#excellent {
+  margin-left: 30px;
+}
+
+#submit {
+  width: 100%;
+  margin: 1em auto;
+  font-family: "Franklin Gothic SSi Book";
+  font-size: 20px;
+  background-color: #d4dd36;
+  border: 1px solid #464648;
+  border-radius: 2px;
+}
+
+#submit:hover {
+  color: #FFFFFF;
+}
+
+footer {
+  font-size: 12px;
+  text-align: center;
+  margin: 10px auto;
+  color: #FFFFFF;
+}
