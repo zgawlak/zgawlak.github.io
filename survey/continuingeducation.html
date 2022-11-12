@@ -25,7 +25,10 @@
             <label>Course Name/Code: <input name="course" id="course" type="text"
                     placeholder="ex. Web Interface Design, COMP213" required /></label>
 
-            <br><label>Year: <input name="year" id="year" type="text" minlength="4" maxlength="4" required /></label>
+            <br><p id="inline">Year: </p>
+            <label><input name="year" type="checkbox" value="1" id="tick" /> 2020</label>
+            <label><input name="year" type="checkbox" value="2" id="tick" /> 2021</label>
+            <label><input name="year" type="checkbox" value="3" id="tick" /> 2022</label>
 
             <label id="semester">Semester: <select name="semester" required>
                     <option value="" disabled>Choose</option>
@@ -41,7 +44,7 @@
             <legend>INSTRUCTOR</legend>
             <p>How would you rate the instructor's: </p>
             <p>1. <b>knowledge</b> of subject?</p>
-            <label><input type="radio" id="excellent" name="knowledge" value="1" required/> Excellent</label>
+            <label><input type="radio" id="excellent" name="knowledge" value="1" required /> Excellent</label>
             <label><input type="radio" id="good" name="knowledge" value="2" /> Good</label>
             <label><input type="radio" id="fair" name="knowledge" value="3" /> Fair</label>
             <label><input type="radio" id="not-satisfactory" name="knowledge" value="4" /> Not Satisfactory</label>
@@ -78,7 +81,7 @@
         <fieldset>
             <legend>COURSE</legend>
             <p>6. How would you rate the <b>course materials</b>?</p>
-            <label><input type="radio" id="excellent" name="course" value="1" required/> Excellent</label>
+            <label><input type="radio" id="excellent" name="course" value="1" required /> Excellent</label>
             <label><input type="radio" id="good" name="course" value="2" /> Good</label>
             <label><input type="radio" id="fair" name="course" value="3" /> Fair</label>
             <label><input type="radio" id="not-satisfactory" name="course" value="4" /> Not Satisfactory</label>
@@ -128,7 +131,7 @@
                 placeholder="More practicals, more emphasis on textbook, etc." name="improve" /></textarea></label>
         <label>13. Other:<textarea id="textarea" rows="4" placeholder="Anything you would like to add goes here!"
                 name="other" /></textarea></label>
-                
+
         <input type="submit" id="submit" value="Submit Responses">
     </form>
     <footer><i>Thank you! We pay attention to your feedback!</i>
