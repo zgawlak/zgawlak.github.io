@@ -25,16 +25,17 @@
             <label>Course Name/Code: <input name="course" id="course" type="text"
                     placeholder="ex. Web Interface Design, COMP213" required /></label>
 
-            <br><span id="inline">Year: </span>
-            <label><input name="year" type="checkbox" value="1" id="year" /> 2020</label>
-            <label><input name="year" type="checkbox" value="2" id="year" /> 2021</label>
-            <label><input name="year" type="checkbox" value="3" id="year" /> 2022</label>
+            <br>
+            <p id="inline">Year: </p>
+            <label><input name="year" type="checkbox" value="2020" id="year" />2020</label>
+            <label><input name="year" type="checkbox" value="2021" id="year" />2021</label>
+            <label><input name="year" type="checkbox" value="2022" id="year" />2022</label>
 
             <label id="semester">Semester: <select name="semester" required>
                     <option value="" disabled>Choose</option>
-                    <option value="1">Fall</option>
-                    <option value="2">Winter</option>
-                    <option value="3">Spring/Summer</option>
+                    <option value="fall">Fall</option>
+                    <option value="winter">Winter</option>
+                    <option value="spring/summer">Spring/Summer</option>
                 </select></label>
 
             <br><label>Instructor Name: <input name="instructor" id="instructor" type="text" required /></label>
@@ -44,36 +45,39 @@
             <legend>INSTRUCTOR</legend>
             <p>How would you rate the instructor's: </p>
             <p>1. <b>knowledge</b> of subject?</p>
-            <label><input type="radio" id="excellent" name="knowledge" value="1" required /> Excellent</label>
-            <label><input type="radio" id="good" name="knowledge" value="2" /> Good</label>
-            <label><input type="radio" id="fair" name="knowledge" value="3" /> Fair</label>
-            <label><input type="radio" id="not-satisfactory" name="knowledge" value="4" /> Not Satisfactory</label>
+            <label><input type="radio" id="excellent" name="knowledge" value="excellent" required /> Excellent</label>
+            <label><input type="radio" id="good" name="knowledge" value="good" /> Good</label>
+            <label><input type="radio" id="fair" name="knowledge" value="fair" /> Fair</label>
+            <label><input type="radio" id="not-satisfactory" name="knowledge" value="not-satisfactory" /> Not
+                Satisfactory</label>
 
             <p>2. <b>helpfulness</b>?</p>
-            <label><input type="radio" id="excellent" name="helpfulness" value="1" required /> Excellent</label>
-            <label><input type="radio" id="good" name="helpfulness" value="2" /> Good</label>
-            <label><input type="radio" id="fair" name="helpfulness" value="3" /> Fair</label>
-            <label><input type="radio" id="not-satisfactory" name="helpfulness" value="4" /> Not
+            <label><input type="radio" id="excellent" name="helpfulness" value="excellent" required /> Excellent</label>
+            <label><input type="radio" id="good" name="helpfulness" value="good" /> Good</label>
+            <label><input type="radio" id="fair" name="helpfulness" value="fair" /> Fair</label>
+            <label><input type="radio" id="not-satisfactory" name="helpfulness" value="not-satisfactory" /> Not
                 Satisfactory</label>
 
             <p>3. <b>courtesy and respect</b> for all students?</p>
-            <label><input type="radio" id="excellent" name="courtesy" value="1" required /> Excellent</label>
-            <label><input type="radio" id="good" name="courtesy" value="2" /> Good</label>
-            <label><input type="radio" id="fair" name="courtesy" value="3" /> Fair</label>
-            <label><input type="radio" id="not-satisfactory" name="courtesy" value="4" /> Not Satisfactory</label>
+            <label><input type="radio" id="excellent" name="courtesy" value="excellent" required /> Excellent</label>
+            <label><input type="radio" id="good" name="courtesy" value="good" /> Good</label>
+            <label><input type="radio" id="fair" name="courtesy" value="fair" /> Fair</label>
+            <label><input type="radio" id="not-satisfactory" name="courtesy" value="not-satisfactory" /> Not
+                Satisfactory</label>
 
             <p>4. <b>communication</b> skills?</p>
-            <label><input type="radio" id="excellent" name="communication" value="1" required /> Excellent</label>
-            <label><input type="radio" id="good" name="communication" value="2" /> Good</label>
-            <label><input type="radio" id="fair" name="communication" value="3" /> Fair</label>
-            <label><input type="radio" id="not-satisfactory" name="communication" value="4" /> Not
+            <label><input type="radio" id="excellent" name="communication" value="excellent" required />
+                Excellent</label>
+            <label><input type="radio" id="good" name="communication" value="good" /> Good</label>
+            <label><input type="radio" id="fair" name="communication" value="fair" /> Fair</label>
+            <label><input type="radio" id="not-satisfactory" name="communication" value="not-satisfactory" /> Not
                 Satisfactory</label>
 
             <p>5. overall <b>performance</b>?</p>
-            <label><input type="radio" id="excellent" name="performance" value="1" required /> Excellent</label>
-            <label><input type="radio" id="good" name="performance" value="2" /> Good</label>
-            <label><input type="radio" id="fair" name="performance" value="3" /> Fair</label>
-            <label><input type="radio" id="not-satisfactory" name="performance" value="4" /> Not
+            <label><input type="radio" id="excellent" name="performance" value="excellent" required /> Excellent</label>
+            <label><input type="radio" id="good" name="performance" value="good" /> Good</label>
+            <label><input type="radio" id="fair" name="performance" value="fair" /> Fair</label>
+            <label><input type="radio" id="not-satisfactory" name="performance" value="not-satisfactory" /> Not
                 Satisfactory</label>
         </fieldset>
 
@@ -81,23 +85,26 @@
         <fieldset>
             <legend>COURSE</legend>
             <p>6. How would you rate the <b>course materials</b>?</p>
-            <label><input type="radio" id="excellent" name="course" value="1" required /> Excellent</label>
-            <label><input type="radio" id="good" name="course" value="2" /> Good</label>
-            <label><input type="radio" id="fair" name="course" value="3" /> Fair</label>
-            <label><input type="radio" id="not-satisfactory" name="course" value="4" /> Not Satisfactory</label>
+            <label><input type="radio" id="excellent" name="course" value="excellent" required /> Excellent</label>
+            <label><input type="radio" id="good" name="course" value="good" /> Good</label>
+            <label><input type="radio" id="fair" name="course" value="fair" /> Fair</label>
+            <label><input type="radio" id="not-satisfactory" name="course" value="not-satisfactory" /> Not
+                Satisfactory</label>
 
             <p>7. How much did this course meet your <b>expectations</b>?</p>
-            <label><input type="radio" id="excellent" name="expectations" value="1" required /> Excellent</label>
-            <label><input type="radio" id="good" name="expectations" value="2" /> Good</label>
-            <label><input type="radio" id="fair" name="expectations" value="3" /> Fair</label>
-            <label><input type="radio" id="not-satisfactory" name="expectations" value="4" /> Not
+            <label><input type="radio" id="excellent" name="expectations" value="excellent" required />
+                Excellent</label>
+            <label><input type="radio" id="good" name="expectations" value="good" /> Good</label>
+            <label><input type="radio" id="fair" name="expectations" value="fair" /> Fair</label>
+            <label><input type="radio" id="not-satisfactory" name="expectations" value="not-satisfactory" /> Not
                 Satisfactory</label>
 
             <p>8. How would you rate this course (<b>overall</b>)?</p>
-            <label><input type="radio" id="excellent" name="overall" value="1" required /> Excellent</label>
-            <label><input type="radio" id="good" name="overall" value="2" /> Good</label>
-            <label><input type="radio" id="fair" name="overall" value="3" /> Fair</label>
-            <label><input type="radio" id="not-satisfactory" name="overall" value="4" /> Not Satisfactory</label>
+            <label><input type="radio" id="excellent" name="overall" value="excellent" required /> Excellent</label>
+            <label><input type="radio" id="good" name="overall" value="good" /> Good</label>
+            <label><input type="radio" id="fair" name="overall" value="fair" /> Fair</label>
+            <label><input type="radio" id="not-satisfactory" name="overall" value="not-satisfactory" /> Not
+                Satisfactory</label>
         </fieldset>
 
         <br>
@@ -107,9 +114,9 @@
                 <p>9. Was the <b>course outline</b> reviewed/explained at the beginning of your course?</p><select
                     id="dropdown" name="outline" required>
                     <option value="" disabled>Choose</option>
-                    <option value="1">Yes</option>
-                    <option value="2">No</option>
-                    <option value="3">Not sure</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    <option value="not-sure">Not sure</option>
                 </select>
             </label>
 
@@ -117,9 +124,9 @@
                 <p>10. Would you <b>recommend</b> this course to a friend with the same
                     interests?</p><select id="dropdown" name="recommend" required>
                     <option value="" disabled>Choose</option>
-                    <option value="1">Yes</option>
-                    <option value="2">No</option>
-                    <option value="3">Not sure</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    <option value="not-sure">Not sure</option>
                 </select>
             </label>
         </fieldset>
