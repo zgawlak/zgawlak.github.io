@@ -45,9 +45,9 @@ nav {
 }
 
 nav a {
-    color: white;
     letter-spacing: .1em;
     text-decoration: none;
+    color: black;
 }
 
 nav a:hover {
@@ -73,10 +73,6 @@ nav li {
     text-align: center;
 }
 
-nav a {
-    color: black;
-}
-
 h1 {
     margin-bottom: -20px;
     margin-top: 10px;
@@ -88,9 +84,6 @@ h1 {
 h2 {
     text-align: center;
     color: white;
-}
-
-h2 {
     font-size: 1.25em;
 }
 
@@ -124,7 +117,7 @@ blockquote {
     flex-wrap: wrap;
 }
 
-.columns>div {
+.columns > div {
     padding: 10px;
 }
 
@@ -155,7 +148,7 @@ table {
 
 td {
     padding: 10px;
-    border: #cccccc solid 1px;
+    border: #778899 solid 1px;
 }
 
 td:nth-of-type(odd) {
@@ -251,7 +244,7 @@ select {
     flex-wrap: wrap;
 }
 
-.testimonials>div {
+.testimonials > div {
     text-align: center;
     background: linear-gradient(to bottom right, ghostwhite, floralwhite);
     padding: 10px;
@@ -273,8 +266,6 @@ select {
 .houses img {
     max-width: 350px;
     height: auto;
-    border-radius: 10px;
-    border: 2px solid #ccc;
     margin-top: 20px;
 }
 
