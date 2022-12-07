@@ -1,0 +1,367 @@
+body {
+    font-size: 16px;
+    font-family: 'Karla';
+    color: black;
+    margin: 0;
+    letter-spacing: .05em;
+}
+
+@font-face {
+    font-family: 'KLOREDEMO';
+    src: url(kloredemo-font/Kloredemo-mLvKV.ttf);
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url(karla-font/Karla-VariableFont_wght.ttf)
+}
+
+header {
+    text-align: center;
+    background-image: url("logo.png");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: 30% 50%;
+    background-color: darkslategrey;
+    padding: 10px;
+    text-shadow: 0 0 1px darkslategray, 0 0 2px darkslategray, 0 0 1px darkslategray, 0 0 2px darkslategray;
+}
+
+a {
+    color: teal;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+nav {
+    text-align: center;
+    text-transform: uppercase;
+    font-style: bold;
+    border-bottom: 1px solid #cccccc;
+    padding: 10px;
+    background-color: white;
+}
+
+nav a {
+    color: white;
+    letter-spacing: .1em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #cccccc;
+}
+
+nav ul {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    width: 20%;
+    min-width: 6em;
+    font-size: 110%;
+    text-align: center;
+}
+
+nav a {
+    color: black;
+}
+
+h1 {
+    margin-bottom: -20px;
+    margin-top: 10px;
+    font-family: 'KLOREDEMO';
+    font-size: 3em;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    font-size: 1.25em;
+}
+
+h3 {
+    font-family: 'KLOREDEMO';
+    font-size: 1.5em;
+    text-align: center;
+    color: darkslategrey;
+}
+
+footer {
+    text-align: center;
+    color: grey;
+    font-size: .75em;
+    margin-top: 4em;
+    padding: 10px;
+    background-image: url("logogrey.png");
+    background-repeat: no-repeat;
+    background-position: 35% 50%;
+}
+
+blockquote {
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.columns>div {
+    padding: 10px;
+}
+
+ul {
+    list-style-type: "☘  ";
+}
+
+.ok {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ok > div {
+    padding: 20px;
+}
+
+#info {
+    text-align: center;
+    margin: 20px auto 0 auto;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+td {
+    padding: 10px;
+    border: #cccccc solid 1px;
+}
+
+td:nth-of-type(odd) {
+    font-weight: bold;
+}
+
+td:nth-of-type(even) {
+    width: 200px;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #ccc;
+}
+
+img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    margin-top: 20px;
+}
+
+#form {
+    margin: 0 auto;
+    padding-top: 0px;
+    max-width: 500px;
+}
+
+.space {
+    margin-top: 2em;
+}
+
+.lessspace {
+    margin: 0.5em;
+}
+
+label,
+textarea {
+    display: block;
+    margin: 1em 0;
+    width: 100%;
+}
+
+input {
+    padding-right: 0;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel] {
+    width: 100%;
+    margin: 1em 0;
+}
+
+input[type=number],
+select {
+    display: inline;
+    float: right;
+    clear: both;
+}
+
+input[type=checkbox] {
+    margin-left: 20px;
+}
+
+select {
+    background-color: darkslategray;
+    color: white;
+    font-family: 'Karla';
+    border: none;
+    border-radius: 5px;
+}
+
+#submit {
+    font-size: 1.01em;
+    width: 100%;
+    margin-top: 10px;
+    background-color: darkslategray;
+    color: white;
+    font-family: 'Karla';
+    border: none;
+    border-radius: 5px;
+}
+
+#submit:hover {
+    background-color: #ccc;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.testimonials>div {
+    text-align: center;
+    background: linear-gradient(to bottom right, ghostwhite, floralwhite);
+    padding: 10px;
+    max-width: 400px;
+    border-radius: 10px;
+    margin: 0 10px;
+    font-family: 'KLOREDEMO';
+    border: 2px solid #ccc;
+}
+
+.houses {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.houses img {
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    margin-top: 20px;
+}
+
+.houses img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.caption {
+    margin-top: 10px;
+}
+
+
+.container {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.container img {
+    vertical-align: middle;
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 0;
+    border: none;
+}
+
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -30px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 10px;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.caption-container {
+    text-align: center;
+    background-color: #ccc;
+    padding: 2px 16px;
+    color: black;
+}
+
+.row {
+    margin-top: -20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}

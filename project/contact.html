@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Clover Realty :: Contact</title>
+    <link rel="icon" type="image/x-icon" href="logofavi.png">
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <h1>Clover Realty</h1>
+        <h2>Licenced Real Estate Agency
+            <br>(505) 503-4455 | june@cloverrealty.com
+        </h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+        </ul>
+    </nav>
+    <h3>Contact Form</h3>
+    <p style="text-align: center;">Looking for a property?<br>Fill out the form below:</p>
+    <div id="form">
+        <form>
+            <label>First Name: <input name="firstname" id="firstname" type="text" required /></label>
+            <label>Last Name: <input name="lastname" id="lasttname" type="text" required /></label>
+            <label>Phone Number: <input name="phone" id="phone" type="tel" placeholder="ex. 5054903090" maxlength="9"
+                    required /></label>
+            <label>E-mail: <input name="email" id="email" type="email" placeholder="ex. you@example.com"
+                    required /></label>
+            <label>What type of property are you interested in?<select name="typeofproperty" id="typeofproperty"
+                    required />
+                <option value="" disabled>Choose</option>
+                <option value="house">House</option>
+                <option value="condo">Condominium</option></select>
+            </label>
+            <label class="space">Number of bedrooms (between 1 and 5):
+                <input type="number" id="beds" name="beds" min="1" max="5" required></label>
+            <label class="space">Number of bathrooms (between 1 and 5):
+                <input type="number" id="baths" name="baths" min="1" max="5" required></label>
+            <p class="space">What's your price range?</p>
+            <label class="lessspace"><input name="pricerange" id="pricerange" type="checkbox" value="200kto399k" />
+                $200,000
+                to $399,000</label>
+            <label class="lessspace"><input name="pricerange" id="pricerange" type="checkbox" value="400kt0599k" />
+                $400,000
+                to $599,000</label>
+            <label class="lessspace"><input name="pricerange" id="pricerange" type="checkbox" value="600kto799k" />
+                $600,000
+                to $799,000</label>
+            <label class="lessspace"><input name="pricerange" id="pricerange" type="checkbox" value="800kto999k" />
+                $800,000
+                to $999,000</label>
+            <label class="lessspace"><input name="pricerange" id="pricerange" type="checkbox" value="1milormore" />
+                $1,000,000 or more</label>
+            <label class="space">Any additional comments?<textarea id="comments" name="comments" rows="4"
+                    placeholder="ex. I want a pool, a spacious backyard..."></textarea></label>
+            <input type="submit" id="submit" value="Submit">
+    </div>
+    </form>
+    <footer>
+        Clover Realty
+        <br>308 Negra Arroya Lane, Albuquerque NM, 87104
+        <br>(505) 503-4455 | june@cloverrealty.com
+    </footer>
+</body>
+
+</html>

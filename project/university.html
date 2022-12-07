@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Clover Realty :: 656 University Blvd</title>
+    <link rel="icon" type="image/x-icon" href="logofavi.png">
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <h1>Clover Realty</h1>
+        <h2>Licenced Real Estate Agency
+            <br>(505) 503-4455 | june@cloverrealty.com
+        </h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+        </ul>
+    </nav>
+
+    <div class="columns">
+        <div class="container">
+            <div class="mySlides">
+                <img src="university/university.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="university/university_livingroom.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="university/university_bedroom.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="university/university_bathroom.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="university/university_porch.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="university/university_pool.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="university/university.jpg" style="width:100%" onclick="currentSlide(1)"
+                        alt="Exterior">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="university/university_livingroom.jpg" style="width:100%"
+                        onclick="currentSlide(2)" alt="Living Room">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="university/university_bedroom.jpg" style="width:100%" onclick="currentSlide(3)"
+                        alt="Bedroom">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="university/university_bathroom.jpg" style="width:100%" onclick="currentSlide(4)"
+                        alt="Bathroom">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="university/university_porch.jpg" style="width:100%" onclick="currentSlide(5)"
+                        alt="Front Porch">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="university/university_pool.jpg" style="width:100%" onclick="currentSlide(6)"
+                        alt="Pool">
+                </div>
+            </div>
+        </div>
+        <div id="info">
+            <table>
+                <tr>
+                    <td>Address</td>
+                    <td>656 University Ave. SE</td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td>$1,000,000</td>
+                </tr>
+                <tr>
+                    <td>Sqft.</td>
+                    <td>3,000</td>
+                </tr>
+                <tr>
+                    <td>Storeys</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Beds</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Baths</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Furnished</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Backyard</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Garage</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Driveway</td>
+                    <td>Yes</td>
+                </tr>
+            </table>
+            <p>A luxurious 3-storey abode featuring an inground pool, a front and back porch area,<br>and a semi-detached garage.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+    <footer>
+        Clover Realty
+        <br>308 Negra Arroya Lane, Albuquerque NM, 87104
+        <br>(505) 503-4455 | june@cloverrealty.com
+    </footer>
+
+</body>
+
+</html>
